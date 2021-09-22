@@ -1,0 +1,27 @@
+.sharedTech {
+  padding: 0px 50px;
+  margin: 100px 50px 50px 50px;
+  @media (max-width: 768px) {
+    padding: 0px 50px;
+  }
+  @media (max-width: 576px) {
+    padding: 0px 20px;
+    margin: 100px 20px 50px;
+  }
+  background-size: cover;
+  opacity: 0.7;
+
+  &_para {
+    padding: 324px 580px 50px 50px;
+    > div {
+      display: flex;
+      gap: 10px;
+    }
+    @media (max-width: 1100px) {
+      padding: 80px 20px;
+    }
+    @media (max-width: 576px) {
+      padding: 30px 0px;
+    }
+  }
+}

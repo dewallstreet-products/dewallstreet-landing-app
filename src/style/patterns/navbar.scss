@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  @media (max-width: 768px) {
+    padding: 0px 50px;
+  }
+  @media (max-width: 576px) {
+    padding: 0px 20px;
+  }
+
+  &_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &_items1{
+    display: none;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      display: block;
+      img:first-child{
+        margin-right: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.aboutCarousel {
+  padding: 30px 50px;
+  margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    padding: 30px 50px;
+  }
+  @media (max-width: 576px) {
+    padding: 30px 20px;
+  }
+
+  &_data{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 115px;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        >div:nth-child(2){
+          display: none;
+        }
+      }
+      >div:nth-child(2){
+        opacity: 20%;
+      }
+  }
+
+}
+
+.buttonWrap{
+  display: flex;
+  gap: 20px;
+}
